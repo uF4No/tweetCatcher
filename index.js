@@ -5,7 +5,7 @@ const twitterClient = new Twitter(config)
 
 const streamUtils = require('./stream')
 
-streamUtils.streamToFs(twitterClient, '#habits')
+streamUtils.streamToFs(twitterClient, '#motivation')
 
 /**
  * If your Twitter API credentials allow you to run multiple streams,
