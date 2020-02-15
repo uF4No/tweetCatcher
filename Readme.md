@@ -40,6 +40,6 @@ Node.js
 
 # Author
 
-Antonio Ufano - [uf4no.com]{https://uf4no.com}
+Antonio Ufano - [uf4no.com](https://uf4no.com) - [@uf4no](https://twitter.com/uf4no)
 
 
