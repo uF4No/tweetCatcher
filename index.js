@@ -5,16 +5,15 @@ const twitterClient = new Twitter(config)
 
 const streamUtils = require('./stream')
 
-let params = {
-  result_type: 'recent',
-  count: 10,
-  q: 'motivation'
-}
-
-const hashtags = ['#motivation', '#lifegoals', '#habits']
-
 streamUtils.streamToFs(twitterClient, '#habits')
 
-// hashtags.forEach(tag => {
-//   streamUtils.streamToFs(twitterClient, tag)
-// })
+/**
+ * If your Twitter API credentials allow you to run multiple streams,
+ * consider the example below
+ * 
+const hashtags = ['#motivation', '#lifegoals', '#habits']
+hashtags.forEach(tag => {
+  streamUtils.streamToFs(twitterClient, tag)
+})
+
+*/
