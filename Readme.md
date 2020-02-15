@@ -15,6 +15,24 @@ module.exports = {
 
 ```
 
+## Installation and startup
+
+- Run ``` npm i ``` to install all dependencies (just the twitter package)
+- Modify the hashtag you want to stream in the index.js file:
+```javascript
+streamUtils.streamToFs(twitterClient, '#YOURHASHTAG')
+```
+- Run ```npm start``` to start streaming tweets
+
+
+## How it works
+- While running the program will create a new file in the streamOutput folder for each 100 tweets. The file will contain the tweet Id's of the tweets streamed for the choosen hashtag.
+
+- Once 100 tweets Id's have been saved the file is closed and a new file is created.
+
+- Once a file with 100 tweet Id's is closed, it's processed. The program will check the details of each tweet and calculate if its value based on the number of impressions, likes and retweets. 
+- You can adjust the algorithm to calculate the tweeter value in the utils.js file.
+- Tweets with a value higher than 5 will be saved in in a new file in the bests folder.
 
 
 ## Build wth
