@@ -38,4 +38,8 @@ streamUtils.streamToFs(twitterClient, '#YOURHASHTAG')
 ## Build wth
 Node.js
 
+# Author
+
+Antonio Ufano - [uf4no.com]{https://uf4no.com}
+
 
